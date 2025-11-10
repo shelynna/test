@@ -8,14 +8,14 @@
 </head>
 <body>
     <h1>Moolre API Integration</h1>
-
-    <div class="container">
+<div class="main-container">
+<div class="container">
         <h2>Disburse Funds</h2>
         <form id="disburse-form">
             <input type="text" id="disburse-account-number" placeholder="Account Number" required>
             <input type="text" id="disburse-account-name" placeholder="Account Name" readonly>
             <input type="number" id="disburse-amount" placeholder="Amount" required>
-            <button type="submit">Disburse</button>
+            <button class="disburse-btn" type="submit">Disburse</button>
         </form>
         <p id="disburse-status"></p>
     </div>
@@ -29,14 +29,15 @@
         </form>
         <p id="sms-status"></p>
     </div>
-
-    <div class="container">
+</div>
+<div class="container">
         <h2>Webhook Notifications</h2>
         <button id="simulate-callback-btn">Simulate Incoming Payment</button>
         <ul id="webhook-list">
             <!-- Notifications will be added here -->
         </ul>
     </div>
+    
 
     <script src="script.js"></script>
 </body>

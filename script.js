@@ -1,15 +1,14 @@
-// Add your Moolre API credentials here
-const MOOLRE_API_USER = 'YOUR_API_USER';
-const MOOLRE_API_KEY = 'YOUR_API_KEY';
-const MOOLRE_API_PUBKEY = 'YOUR_API_PUBKEY';
-const MOOLRE_API_VASKEY = 'YOUR_API_VASKEY';
+const MOOLRE_API_USER = "PASTE_YOUR_API_USER_HERE";
+const MOOLRE_API_KEY = "PASTE_YOUR_API_KEY_HERE";
+const MOOLRE_API_PUBKEY = "PASTE_YOUR_API_PUBKEY_HERE";
+const MOOLRE_API_VASKEY = "PASTE_YOUR_API_VASKEY_HERE";
 
 
-// API Endpoints (replace with actual endpoints if different)
 const API_BASE_URL = 'https://api.moolre.com';
-const VALIDATE_NAME_URL = `${API_BASE_URL}/v1/transfer/validate`; // Example endpoint
-const DISBURSE_FUNDS_URL = `${API_BASE_URL}/v1/transfer/disburse`; // Example endpoint
-const SEND_SMS_URL = `${API_BASE_URL}/v1/sms/send`; // Example endpoint
+const VALIDATE_NAME_URL = `${API_BASE_URL}/v1/transfer/validate`; 
+const DISBURSE_FUNDS_URL = `${API_BASE_URL}/v1/transfer/disburse`;
+const SEND_SMS_URL = `${API_BASE_URL}/v1/sms/send`; 
+
 
 const disburseForm = document.getElementById('disburse-form');
 const smsStatus = document.getElementById('sms-status');
