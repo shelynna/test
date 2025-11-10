@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moolre API Integration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Moolre API Integration</h1>
+
+    <div class="container">
+        <h2>Disburse Funds</h2>
+        <form id="disburse-form">
+            <input type="text" id="disburse-account-number" placeholder="Account Number" required>
+            <input type="text" id="disburse-account-name" placeholder="Account Name" readonly>
+            <input type="number" id="disburse-amount" placeholder="Amount" required>
+            <button type="submit">Disburse</button>
+        </form>
+        <p id="disburse-status"></p>
+    </div>
+
+    <div class="container">
+        <h2>Send SMS</h2>
+        <form id="sms-form">
+            <input type="text" id="sms-recipient" placeholder="Recipient Phone Number" required>
+            <textarea id="sms-message" placeholder="Message" required></textarea>
+            <button type="submit">Send SMS</button>
+        </form>
+        <p id="sms-status"></p>
+    </div>
+
+    <div class="container">
+        <h2>Webhook Notifications</h2>
+        <button id="simulate-callback-btn">Simulate Incoming Payment</button>
+        <ul id="webhook-list">
+            <!-- Notifications will be added here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
